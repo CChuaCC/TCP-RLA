@@ -31,8 +31,10 @@ Train the model by 4000 labeled data of CIFAR-10 dataset:
 ```
 python train.py --dataset cifar10 --num-labeled 4000 --arch wideresnet --batch-size 64 --lr 0.03 --expand-labels --seed 5 --out results/cifar10@4000.5
 ```
+Train the model by 7 labeled data of chinesepaintings dataset:
+```
 python train.py --dataset chinesepaintings --num-labeled 7 --arch wideresnet --batch-size 64 --lr 0.0003 --expand-labels --seed 5 --out results/wrns100-10
-
+```
 
 Train the model by 10000 labeled data of CIFAR-100 dataset by using DistributedDataParallel:
 ```
